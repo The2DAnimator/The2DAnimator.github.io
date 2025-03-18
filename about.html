@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Deus Joseph Bernad</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Font Awesome for Icons (CDN) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <nav class="sidebar">
+        <h2>Menu</h2>
+        <button class="menu-toggle">☰</button>
+        <ul>
+            <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="portfolio.html"><i class="fas fa-briefcase"></i> Portfolio</a></li>
+            <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact Me</a></li>
+            <li><a href="views.html"><i class="fas fa-chart-line"></i> Portfolio Views</a></li>
+            <li><a href="about.html"><i class="fas fa-user"></i> About Me</a></li>
+        </ul>
+    </nav>
+    
+    <div class="main-content">
+        <section class="about">
+            <div class="container">
+                <h2 style="margin-left: 70pt;">About Me</h2>
+                <p>I am a passionate designer and animator with a love for creativity. 
+                   I specialize in 2D animation, graphic design, video editing, audio editing, and motion graphics.</p>
+                <br>
+                <hr>
+                <br>
+                <h3 style="margin-left: 70pt;">My History</h3>
+                <ul class="history-timeline">
+                    <li>
+                        <strong>2023 - Started my creative journey</strong>
+                        Discovered my passion for design and animation.
+                    </li>
+                    <li>
+                        <strong>2023 - First freelance project</strong>
+                        Completed my first animation project for a client.
+                    </li>
+                    <li>
+                        <strong>2024 - Expanded into video and audio editing</strong>
+                        Started working with video editing and motion graphics.
+                    </li>
+                    <li>
+                        <strong>2024 - Worked with major clients</strong>
+                        Collaborated with brands and companies to create animations and videos.
+                    </li>
+                    <li>
+                        <strong>2025 - Portfolio and continuous growth</strong>
+                        Built an extensive portfolio showcasing my best works.
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+
+    <style>
+.history-timeline {
+    list-style: none;
+    padding: 0;
+    position: relative;
+    margin-left: 50px; /* Adjusted for better alignment */
+}
+
+.history-timeline::before {
+    content: "";
+    position: absolute;
+    left: 15px;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(180deg, #ff5722, #ff9800);
+    border-radius: 2px;
+}
+
+.history-timeline li {
+    background: linear-gradient(135deg, #ffffff, #83c0fd); /* Soft gradient for modern feel */
+    margin: 20px 0;
+    padding: 15px 20px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 2px solid #007bff; /* Adds a clean border on the left */
+}
+
+.history-timeline li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(135deg, #83c0fd, #ffffff); /* Lighten background on hover */
+}
+
+.history-timeline li::before {
+    content: "";
+    position: absolute;
+    left: -35px; /* Keeps the dot aligned */
+    top: 20px;
+    width: 20px;
+    height: 20px;
+    background: #007bff;
+    border-radius: 50%;
+    border: 3px solid #ffffff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.history-timeline li strong {
+    display: block;
+    color: #222;
+    font-size: 1.2em;
+    margin-bottom: 0px;
+}
+
+.history-timeline li p {
+    color: #444;
+    font-size: 1em;
+    margin: 0;
+    line-height: 1.6;
+}
+
+
+
+    </style>
+
+</body>
+</html>

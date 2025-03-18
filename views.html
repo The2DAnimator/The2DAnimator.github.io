@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Views</title>
+    <link rel="stylesheet" href="styles.css">
+
+     <!-- Font Awesome for Icons (CDN) -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <nav class="sidebar">
+        <h2>Menu</h2>
+        <button class="menu-toggle">☰</button>
+        <ul>
+            <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="portfolio.html"><i class="fas fa-briefcase"></i> Portfolio</a></li>
+            <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact Me</a></li>
+            <li><a href="views.html"><i class="fas fa-chart-line"></i> Portfolio Views</a></li>
+            <li><a href="about.html"><i class="fas fa-user"></i> About Me</a></li> <!-- Added About Page -->
+        </ul>
+    </nav>
+    
+
+    <div class="main-content">
+        <section class="portfolio">
+            <div class="container">
+                <h2 style="margin-left: 70pt;">Portfolio Views</h2>
+
+              <br> <label for="daysRange">Show data for the last:</label>
+                <select id="daysRange">
+                    <option value="1">1 Day</option>
+                    <option value="7">7 Days</option>
+                    <option value="30">30 Days</option>
+                    <option value="90">90 Days</option>
+                </select>
+
+                <canvas id="viewsChart"></canvas>
+
+                <!-- Animated Views Counter -->
+                <div class="animated-views">
+                    <h3>Daily Views:</h3>
+                    <p id="animatedViewsCount">Loading...</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="views.js"></script>
+    <script src="script.js"></script> <!-- Sidebar Toggle Script -->
+</body>
+</html>
